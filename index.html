@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <style>
+            body {
+                background-color: #202124;
+            }
+            
+            @media only screen and (max-width: 1500px){
+                #LuckyButton {
+                    top: 47%;
+                    left: 70%;
+                }
+            }
+
+            @media only screen and (max-width: 2000px) {
+                #advancedhyperlink {
+                    right: 5%;
+                }
+
+                #imagehyperlink {
+                    right: 1%;
+                }
+
+                #searchInput {
+                    width: 580px;
+                }
+                
+
+                #SearchButton, #LuckyButton {
+                    
+                    width: 140px;
+                    height: 38px;
+                    
+                   
+                }
+
+                #SearchButton {
+                    top: 47%;
+                    left: 39%;
+                }
+
+                #LuckyButton {
+                    top: 47%;
+                    left: 49%;
+                }
+
+
+              }
+
+              @media only screen and (max-width: 1000px) {
+                #advancedhyperlink {
+                    right: 15%;
+                }
+                #searchInput {
+                    width: 350px;
+                }
+                #imagehyperlink {
+                    right: 2%;
+                }
+                
+
+                #SearchButton, #LuckyButton {
+                    
+                    width: 140px;
+                    height: 38px;
+                    
+                   
+                }
+
+                #SearchButton {
+                    top: 47%;
+                    left: 39%;
+                }
+
+                #LuckyButton {
+                    top: 47%;
+                    left: 70%;
+                }
+
+              }
+
+            #searchInput {
+                box-sizing: border-box;
+                color:white;
+                font-weight: 500;
+                padding: 10px;
+                border: 20px;
+                background-color: transparent;
+                border-color: white;
+                border-width: 20px;
+               
+                height: 41px;
+                border-radius: 20px;
+                border: 1px solid #5c6065;
+                position:absolute;
+                top: 37%;
+                left: 30%;
+
+                padding-left: 50px; /* Space for the icon */
+                background-image: url("searchicon.png");
+                background-repeat: no-repeat;
+                background-position: 5px; /* Position of the icon */
+                
+            }
+
+            #searchInput:hover {
+                background-color: #303134;
+                border: 1px solid #303134;
+                
+                
+            }
+
+            #searchInput:focus {
+                color:white;
+                font-weight: 500;
+                padding: 10px;
+                box-sizing: border-box;
+                padding-left: 50px; /* Space for the icon */
+                background-image: url("searchicon.png");
+                background-repeat: no-repeat;
+                background-position: 5px; 
+            }
+
+            #googlelogo {
+                position:absolute;
+                top: 20%;
+                left: 40%;
+                
+            }
+
+            #SearchButton, #LuckyButton {
+                position:absolute;
+                
+                background-color: #303134;
+                border-radius: 5px;
+                color:azure;
+               
+                border-color: transparent;
+            }
+
+            #SearchButton:hover,#LuckyButton:hover {
+                border-color: white;
+                border-width: 0.1px;
+            }
+
+            #imagehyperlink , #advancedhyperlink {
+                color: white;
+                background-color: transparent;
+                position: absolute; 
+                top: 2%;
+                
+                border-color: transparent;
+            }
+
+            #imagehyperlink:hover , #advancedhyperlink:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div style = "display: flex;">
+
+        
+            <!--Google logo-->
+            <div id="googlelogo">
+                <img src="google_original.png" alt="Google Logo" width="272" height="92">
+            </div>
+
+            <div>
+                <!--Normal google search-->
+                <form action="https://www.google.com/search" method="GET">
+                    <input id="searchInput" type="text" name="q">
+                    <div>
+                        <button id="SearchButton" type="submit" name="btnK" value="Google Search">Google Search</button>
+                    </div>
+                    <div>
+                        <button id="LuckyButton" type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div>
+                <a href="image.html">
+                    <button id="imagehyperlink">Image</button>
+                </a>
+
+                <a href="advanced.html">
+                    <button id="advancedhyperlink">Advanced</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

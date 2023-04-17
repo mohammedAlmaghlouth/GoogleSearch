@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced</title>
+    <style>
+        body {
+            background-color: #202124;
+        }
+        #googlelogo {
+            position:absolute;
+                top: 3%;
+                left: 1%;
+        }
+        #AdvancedText {
+            color: #eb8781;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position:absolute;
+                top: 12%;
+                left: 3%;
+
+        }
+
+        #FPW {
+            color: white;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            position:absolute;
+                top: 25%;
+                left: 3%;
+        }
+
+        #prefield {
+            color: #aab8c1;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            position:absolute;
+                top: 33%;
+                left: 3%;
+        }
+
+        hr {
+            margin-top: 140px; 
+            color: #2d3033;/* Adjust the value as needed */
+          }
+
+          #textfield {
+            box-sizing: border-box;
+            color:white;
+            font-weight: 500;
+            padding: 10px;
+            border: 20px;
+            background-color: transparent;
+            border-color: white;
+            border-width: 20px;
+            margin-left: 70px;
+            width: 500px;
+            height: 26px;
+            border: 1px solid #565a5f;
+            position:absolute;
+            top: 32%;
+            left: 16%;
+
+           /* Position of the icon */
+            
+        }
+
+        #textfield:focus {
+            border: 1px solid #9dc1ee;
+        }
+
+        #mainhyperlink {
+            color: white;
+            background-color: transparent;
+            position: absolute; 
+            top: 2%;
+            right:1%;
+            border-color: transparent;
+        }
+
+        #mainhyperlink:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #AdvancedButton {
+            position:absolute;
+            background-color: #8ab4f8;
+            font-size: 10px;
+            font-weight: 600;
+            height: 30px;
+            color:black;
+            border-radius: 3px;
+            border-color: transparent;
+            top: 56%;
+            left: 46%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            #textfield {
+                box-sizing: border-box;
+                color:white;
+                font-weight: 500;
+                padding: 10px;
+                border: 20px;
+                background-color: transparent;
+                border-color: white;
+                border-width: 20px;
+                width: 200px;
+                margin-left: 100px;
+                height: 26px;
+                border: 1px solid #565a5f;
+                position:absolute;
+                top: 32%;
+                left: 16%;
+    
+               /* Position of the icon */
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--Google logo-->
+    <div id="googlelogo">
+        <img src="google_original.png" alt="Google Logo" width="74" height="24">
+    </div>
+    <div id="AdvancedText">
+        Advanced Search
+    </div>
+    <hr color="#2d3033">
+    <div id="FPW">
+        Find pages with...
+    </div>
+
+    <div id="prefield">
+        All these words:
+    </div>
+
+    <div style="top: 39%;" id="prefield">
+        this exact word or phrase:
+    </div>
+
+    <div style="top: 45%;" id="prefield">
+        any of these words:
+    </div>
+
+    <div style="top: 51%;"id="prefield">
+        none of these words:
+    </div>
+
+    <form action="https://www.google.com/search" method="GET">
+        <input id="textfield" type="text" name="q">
+        <input style="top: 38%;" id="textfield" type="text" name="as_epq">
+        <input style="top: 44%;" id="textfield" type="text" name="as_oq">
+        <input style="top: 50%;" id="textfield" type="text" name="as_eq">
+
+        <button id="AdvancedButton" type="submit" value="Advanced Search">Advanced Search</button>
+        
+    </form>
+
+    <div>
+        <a href="index.html">
+            <button id="mainhyperlink">Google Search</button>
+        </a>
+
+    </div>
+
+</body>
+</html>

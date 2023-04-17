@@ -9,6 +9,9 @@ Enter a search query in the search bar and click the "Google Search" button to v
 Click on the links in the upper-right corner to navigate to Google Image Search or Google Advanced Search pages. <br />
 On the Google Image Search and Google Advanced Search pages, enter search queries or input for advanced search options, respectively, and click the search buttons to view image search results or perform advanced searches. <br />
 
+## Visit the website
+https://mohammedalmaghlouth.github.io/GoogleSearch/
+
 ## Recorded demo
 https://www.youtube.com/watch?v=aSZULEjHshI&t=3s
 
